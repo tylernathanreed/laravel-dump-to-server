@@ -1,6 +1,6 @@
 <?php
 
-namespace Reedware\LaravelDumpToServer
+namespace Reedware\LaravelDumpToServer;
 
 use BeyondCode\DumpServer\RequestContextProvider;
 use ReflectionClass;
