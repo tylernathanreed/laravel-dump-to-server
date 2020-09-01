@@ -29,7 +29,7 @@ class ServiceProvider extends DeferredServiceProvider
 
             $connection = new Connection($app->config->get('debug-server.host'), [
                 'request' => new RequestContextProvider($app['request']),
-                'source' => new SourceContextProvider('utf-8', $app->basePath()),
+                'source' => new SourceContextProvider('utf-8', $app['path.base']),
             ]);
 
             return new Check($connection);
