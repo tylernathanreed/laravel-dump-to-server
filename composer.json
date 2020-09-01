@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^7.1.3",
-        "beyondcode/laravel-dump-server": "^1.0",
+        "beyondcode/laravel-dump-server": "^1.0"
     },
     "autoload": {
         "psr-4": {
