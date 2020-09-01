@@ -1,0 +1,21 @@
+{
+    "name": "reedware/laravel-dump-to-server",
+    "description": "Adds the ability to dump only when the dump server is online.",
+    "keywords": ["laravel", "dump", "server"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tyler Reed",
+            "email": "tylernathanreed@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "beyondcode/laravel-dump-server": "^1.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "Reedware\\LaravelDumpToServer\\": "src/"
+        }
+    }
+}
