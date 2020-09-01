@@ -16,7 +16,10 @@
     "autoload": {
         "psr-4": {
             "Reedware\\LaravelDumpToServer\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "extra": {
         "laravel": {
