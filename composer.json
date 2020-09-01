@@ -17,5 +17,12 @@
         "psr-4": {
             "Reedware\\LaravelDumpToServer\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reedware\\LaravelDumpToServer\\ServiceProvider"
+            ]
+        }
     }
 }

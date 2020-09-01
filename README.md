@@ -1,1 +1,37 @@
-TBD
+# Laravel Composite Relations
+
+[![Latest Stable Version](https://poser.pugx.org/reedware/laravel-dump-to-server/v)](//packagist.org/packages/reedware/laravel-dump-to-server)
+[![Total Downloads](https://poser.pugx.org/reedware/laravel-dump-to-server/downloads)](//packagist.org/packages/reedware/laravel-dump-to-server)
+
+Adds the ability to dump only when the dump server is online.
+
+## Introduction
+
+This package leverages the [beyondcode/laravel-dump-server](https://github.com/beyondcode/laravel-dump-server) package, but extends it by adding some globally available functions. While having a dump server is great, there are times where I've wanted to change the content of dump if it's going to the dump server versus the browser. Additionally, I've also had use-cases where I didn't want to dump at all unless I knew it was going to the dump server.
+
+## Installation
+
+#### Using Composer
+
+```
+composer require reedware/laravel-dump-to-server --dev
+```
+
+If you want to use this package in a production environment, don't include the `--dev` flag. This is something that I don't recommend; not because the package wouldn't work, but because using a dump server in production environment is ill-advised, and there are typically better approaches.
+
+This package uses an auto-discovered service provider.
+
+#### Versioning
+
+This package supports Laravel 5.6 and onward.
+
+## Usage
+
+Here are the two helper functions that this package introduces:
+
+```php
+isDumpServerOnline() // Returns true/false
+dumpToServer() // Performs a typical dump, but only when the dump server is online
+```
+
+You can use them however you like.
