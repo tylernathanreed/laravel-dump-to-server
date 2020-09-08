@@ -14,10 +14,10 @@ This package leverages the [beyondcode/laravel-dump-server](https://github.com/b
 #### Using Composer
 
 ```
-composer require reedware/laravel-dump-to-server --dev
+composer require reedware/laravel-dump-to-server
 ```
 
-If you want to use this package in a production environment, don't include the `--dev` flag. This is something that I don't recommend; not because the package wouldn't work, but because using a dump server in production environment is ill-advised, and there are typically better approaches.
+This package is intentially light-weight, and only requires the [beyondcode/laravel-dump-server](https://github.com/beyondcode/laravel-dump-server) package as a dev dependency. This means that you can install the package on a production environment without including dump server (assuming you have required dump server as a dev dependency). The helpers introduced by this package are aware of when the dump server package is not present.
 
 This package uses an auto-discovered service provider.
 
