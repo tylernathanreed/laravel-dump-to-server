@@ -15,7 +15,18 @@ class ServiceProvider extends DeferredServiceProvider
      */
     public function register()
     {
-        $this->registerDumpServerChecker();
+        if($this->shouldRegisterDumpServerChecker()) {
+            $this->registerDumpServerChecker();
+        }
+    }
+
+    protected function shouldRegisterDumpServerChecker()
+    {
+        return (
+            class_exists('BeyondCode\\DumpServer\\RequestContextProvider') &&
+            class_exists('Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider') &&
+            class_exists('Symfony\Component\VarDumper\Server\Connection')
+        );
     }
 
     /**
@@ -36,7 +47,7 @@ class ServiceProvider extends DeferredServiceProvider
 
         });
     }
-
+    
     /**
      * Get the services provided by the provider.
      *
