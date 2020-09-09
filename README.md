@@ -1,4 +1,4 @@
-# Laravel Composite Relations
+# Laravel Dump to Server Helpers
 
 [![Latest Stable Version](https://poser.pugx.org/reedware/laravel-dump-to-server/v)](//packagist.org/packages/reedware/laravel-dump-to-server)
 [![Total Downloads](https://poser.pugx.org/reedware/laravel-dump-to-server/downloads)](//packagist.org/packages/reedware/laravel-dump-to-server)
