@@ -60,7 +60,7 @@ class ServiceProvider extends DeferredServiceProvider
      */
     public function provides()
     {
-        if($this->shouldRegisterDumpServerChecker()) {
+        if(!$this->shouldRegisterDumpServerChecker()) {
             return [];
         }
 
