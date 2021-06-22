@@ -2,6 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/reedware/laravel-dump-to-server/v)](//packagist.org/packages/reedware/laravel-dump-to-server)
 [![Total Downloads](https://poser.pugx.org/reedware/laravel-dump-to-server/downloads)](//packagist.org/packages/reedware/laravel-dump-to-server)
+[![Build Status](https://github.com/tylernathanreed/laravel-dump-to-server/workflows/tests/badge.svg)](https://github.com/tylernathanreed/laravel-dump-to-server/actions)
 
 Adds the ability to dump only when the dump server is online.
 
