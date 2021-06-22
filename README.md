@@ -24,7 +24,9 @@ This package uses an auto-discovered service provider.
 
 #### Versioning
 
-This package supports Laravel 5.6 and onward.
+This package supports Laravel 6.0 and onward.
+
+For Laravel 5.6 support, use version 1.x of this package.
 
 ## Usage
 
